@@ -1,0 +1,28 @@
+### POST A PRODUCT
+POST http://localhost:5000/products HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Carro",
+    "price": "10000",
+    "description": "Um ótimo carro!"
+}
+
+### GET ALL PRODUCTS
+GET http://localhost:5000/products HTTP/1.1
+
+### GET A SINGLE PRODUCT
+GET http://localhost:5000/products/648b4dcdb6077092e1979673 HTTP/1.1
+
+### UPDATE A SINGLE PRODUCT
+PATCH http://localhost:5000/products/update/648b4dcdb6077092e1979673 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Carro",
+    "price": "10000",
+    "description": "Um ótimo carro!"
+}
+
+### DELETE A SINGLE PRODUCT
+DELETE http://localhost:5000/products/delete/648b4dcdb6077092e1979673 HTTP/1.1
